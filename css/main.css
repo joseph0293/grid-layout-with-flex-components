@@ -11,27 +11,49 @@ body {
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    /* Added height to space out content within each card */
   }
   
   .emoji h2 {
     margin: 0;
     border-bottom: 2px solid #ccc;
+    font-size: 1.2rem;
+    font-weight: 700;
+    order: 2;
   }
   
+  .emoji p {
+    order: 3;
+    font-size: 1rem;
+    line-height: normal;
+  }
   .emoji a {
+    font-size: 1rem;
     text-decoration: none;
     background-color: #781BAA;
     color: white;
     padding: 1rem;
     border-radius: 8px;
+    order: 4;
   }
   
   .icon {
+    align-self: center;
+    order: 1;
     font-size: 4rem;
   }
 
   .emojis {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1em;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
